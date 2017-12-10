@@ -82,11 +82,13 @@ syntax on
 " Color Schemes
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'crusoexia/vim-monokai'
 if has('gui_running')
   set background=dark
   colorscheme solarized
 else
-  colorscheme zenburn
+  "colorscheme zenburn
+  colorscheme monokai
 endif
 
 
