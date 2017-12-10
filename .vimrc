@@ -33,6 +33,16 @@ set laststatus=2
 set t_Co=256
 
 
+" Code folding
+set foldmethod=indent
+set foldlevel=0
+" Enable folding with the spacebar instead of za
+nnoremap <space> za
+Plugin 'tmhedberg/SimpylFold'
+" Display docstring preview for folded code
+let g:SimpylFold_docstring_preview=1
+
+
 " General Config
 set encoding=utf-8
 set nu
