@@ -66,6 +66,12 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
+" Install You Complete Me YCM
+Plugin 'Valloric/YouCompleteMe'
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+
 " General Config
 set encoding=utf-8
 set nu
