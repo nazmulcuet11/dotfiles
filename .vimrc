@@ -61,6 +61,11 @@ au BufNewFile,BufRead *.js; *.html; *.css;
 Plugin 'vim-scripts/indentpython.vim'
 
 
+" Flag bad white spaces
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+
 " General Config
 set encoding=utf-8
 set nu
