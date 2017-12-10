@@ -79,8 +79,18 @@ let python_highlight_all=1
 syntax on
 
 
+" Color Schemes
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+else
+  colorscheme zenburn
+endif
+
+
 " General Config
 set encoding=utf-8
 set nu
 set clipboard=unnamed
-" set editing-mode vi -- for unknown reason not supporting
