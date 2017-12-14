@@ -93,3 +93,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# always run ls command after cd, this is zsh's way chpwd function in zsh is called whenever directory is changed
+function chpwd() {
+  ls
+}
