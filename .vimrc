@@ -35,7 +35,7 @@ set t_Co=256
 
 " Code folding
 set foldmethod=indent
-set foldlevel=0
+set foldlevel=10
 " Enable folding with the spacebar instead of za
 nnoremap <space> za
 Plugin 'tmhedberg/SimpylFold'
@@ -94,5 +94,7 @@ endif
 
 " General Config
 set encoding=utf-8
-set nu
+set number
 set clipboard=unnamed
+set cursorline " Highlight cursor line
+set wildmenu " visual autocomplete for command menu
