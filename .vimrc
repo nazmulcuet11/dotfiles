@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -45,19 +45,19 @@ let g:SimpylFold_docstring_preview=1
 
 " Indentation
 " Indentation for python
-au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix |
+" au BufNewFile,BufRead *.py
+"     \ set tabstop=4 |
+"     \ set softtabstop=4 |
+"     \ set shiftwidth=4 |
+"     \ set textwidth=79 |
+"     \ set expandtab |
+"     \ set autoindent |
+"     \ set fileformat=unix |
 " Indentation for html, css, jasvascript
-au BufNewFile,BufRead *.js; *.html; *.css;
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2 |
+" au BufNewFile,BufRead *.js; *.html; *.css;
+"     \ set tabstop=2 |
+"     \ set softtabstop=2 |
+"     \ set shiftwidth=2 |
 Plugin 'vim-scripts/indentpython.vim'
 
 
@@ -98,3 +98,14 @@ set number
 set clipboard=unnamed
 set cursorline " Highlight cursor line
 set wildmenu " visual autocomplete for command menu
+" Indentation 
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
+set autoindent
+set fileformat=unix
+set textwidth=79
+" highlight column number 110
+set colorcolumn=110
+highlight ColorColumn ctermbg=darkgray
