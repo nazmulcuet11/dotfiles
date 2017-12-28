@@ -128,3 +128,9 @@ set textwidth=79
 " highlight column number 110
 set colorcolumn=110
 highlight ColorColumn ctermbg=darkgray
+" Show whitespace
+set list
+set showbreak=↪\ 
+set listchars=tab:»\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+" Set special key (tab, nbsp, space and trails) colors 
+highlight SpecialKey ctermfg=8a8a8a guifg=8a8a8a
