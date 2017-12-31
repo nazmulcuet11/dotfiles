@@ -91,9 +91,32 @@ highlight BadWhitespace ctermbg=red guibg=darkred
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 
-" Complete Me
+" You Complete Me
+let g:ycm_complete_in_comments_and_strings=1
+" Load ycm conf by default
+let g:ycm_confirm_extra_conf=0
+" Turn on tag completion
+let g:ycm_collect_identifiers_from_tags_files=1
+" Only show completion as a list instead of a sub-window
+" set completeopt-=preview
+" Start completion from the first character
+let g:ycm_min_num_of_chars_for_completion=1
+" Don't cache completion items
+" let g:ycm_cache_omnifunc=0
+" Complete syntax keywords
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" This assumes your kernel directory has the word 'kernel'
+if getcwd() =~ "kernel"
+    let g:ycm_global_ycm_extra_conf='~/ycm_extra_conf_kernel.py'
+else
+	" let g:ycm_global_ycm_extra_conf = '~/ycm_global_extra_conf.py'
+	let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+endif
 
 
 " Syntax Syntax Checking/Highlighting
@@ -106,8 +129,10 @@ if has('gui_running')
   set background=dark
   colorscheme solarized
 else
-  "colorscheme zenburn
-  colorscheme monokai
+  colorscheme zenburn
+  "colorschem:e monokai
+  set background=dark
+  "colorscheme solarized
 endif
 
 
