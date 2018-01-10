@@ -78,12 +78,12 @@ highlight SpecialKey ctermfg=8a8a8a guifg=8a8a8a
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Map - to move line downwords
-" map - ddp
+nnoremap - ddp
 " Map + to move line upwards
-" map + dd <bar> :k <bar> :p
+nnoremap + ddkP
 
 " map ctrl-d to delete lines in insert mode
-imap <c-d> <esc>ddi
+inoremap <c-d> <esc>ddi
 " }}}
 
 
