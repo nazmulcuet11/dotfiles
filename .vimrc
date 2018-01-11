@@ -18,6 +18,9 @@ Plugin 'gmarik/Vundle.vim'
 " Nerdtree
 Plugin 'scrooloose/nerdtree'
 
+" Nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
+
 " Powerline
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
@@ -41,6 +44,9 @@ Plugin 'crusoexia/vim-monokai'
 
 " Bracket Completion
 Plugin 'git@github.com:jiangmiao/auto-pairs.git'
+
+" Vim-Gitgutter
+Plugin 'airblade/vim-gitgutter'
 " --------- My plug-ins ---------
 
 " All of your Plugins must be added before the following line
@@ -50,6 +56,8 @@ filetype plugin indent on    " required
 
 
 " General Config {{{
+let mapleader = ","
+
 set encoding=utf-8 " Use an encoding that supports uni-code
 set number " Show line number
 set clipboard=unnamed
@@ -84,6 +92,9 @@ nnoremap + ddkP
 
 " map ctrl-d to delete lines in insert mode
 inoremap <c-d> <esc>ddi
+
+" map jk to esc
+inoremap jk <esc>
 " }}}
 
 
@@ -169,13 +180,15 @@ endif
 
 " Color Schemes {{{
 if has('gui_running')
-  set background=dark
+  " set background=dark
+  set background=light
   colorscheme solarized
 else
   colorscheme zenburn
   "colorschem:e monokai
   set background=dark
-  "colorscheme solarized
+  "set background=light
+  " colorscheme solarized
 endif
 " }}}
 
