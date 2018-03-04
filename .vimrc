@@ -95,6 +95,11 @@ inoremap <c-d> <esc>ddi
 
 " map jk to esc
 inoremap jk <esc>
+
+" source vimrc file if found in current working directory
+set exrc
+" restrict usage of some potentially harmful command in non-default vimrc
+set secure
 " }}}
 
 
