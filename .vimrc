@@ -45,8 +45,18 @@ Plugin 'crusoexia/vim-monokai'
 " Bracket Completion
 Plugin 'git@github.com:jiangmiao/auto-pairs.git'
 
+" super tab"
+Plugin 'ervandew/supertab'
+
 " Vim-Gitgutter
 Plugin 'airblade/vim-gitgutter'
+
+"Snipmate
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+" Optional:
+Plugin 'honza/vim-snippets'
 " --------- My plug-ins ---------
 
 " All of your Plugins must be added before the following line
@@ -180,6 +190,11 @@ else
 	" let g:ycm_global_ycm_extra_conf = '~/ycm_global_extra_conf.py'
 	let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 endif
+" }}}
+
+
+" Super tab {{{
+" let g:SuperTabDefaultCompletionType = "<c-n>"
 " }}}
 
 
