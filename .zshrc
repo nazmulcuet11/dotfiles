@@ -97,7 +97,16 @@ source $ZSH/oh-my-zsh.sh
 
 # always run ls command after cd, this is zsh's way chpwd function in zsh is called whenever directory is changed
 function chpwd() {
-  ls
+  ls -a
 }
+
+# powerline setup
+if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh  ]]; then
+    source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
+fi
+
+if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh  ]]; then
+    source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+fi
 
 DEFAULT_USER=nazmul
