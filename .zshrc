@@ -10,6 +10,9 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 
+# POWERLEVEL9K_MODE='awesome-fontconfig'
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -101,6 +104,8 @@ function chpwd() {
   ls -a
 }
 
+DEFAULT_USER=nazmul
+
 # powerline setup
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh  ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
@@ -110,4 +115,3 @@ if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline
     source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-DEFAULT_USER=nazmul
