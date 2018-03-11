@@ -70,7 +70,7 @@ let mapleader = ","
 
 set encoding=utf-8 " Use an encoding that supports uni-code
 set number " Show line number
-set clipboard=unnamed
+set clipboard=unnamedplus
 set cursorline " Highlight cursor line
 set wildmenu " Visual autocomplete for command menu
 set fileformat=unix
