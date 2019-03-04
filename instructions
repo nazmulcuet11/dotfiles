@@ -1,6 +1,7 @@
 -- VLC Media Player Configuration --
 copy and replace(if existing) vlcrc file to
 for linux/unix ~/.config/vlc/vlcrc
+For Mac /Users/badrobot/Library/Preferences/org.videolan.vlc/vlcrc
 for windows C:\Users\%username%\Application Data\vlc\vlcrc
 
 -- .gitconfig, .zshrc, .vimrc --
