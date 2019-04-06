@@ -16,5 +16,5 @@
 # 	echo "Creating symlink to $file in home directory"
 # 	ln --symbolic $dir/$file ~/$file
 # done
-
+mv ~/.zshrc ~/dotfiles-old/
 ln -s ~/dotfiles/.zshrc ~/.zshrc
