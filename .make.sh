@@ -17,6 +17,10 @@
 # 	ln --symbolic $dir/$file ~/$file
 # done
 
+
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 mv ~/.zshrc ~/dotfiles-old/
 ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh
