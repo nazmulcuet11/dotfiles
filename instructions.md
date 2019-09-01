@@ -29,9 +29,9 @@ Set ```ZSH_THEME=powerlevel10k/powerlevel10k``` in your ```~/.zshrc```.
 
 ### Install iTerm2(Optional)
 Download iTerm2 from https://www.iterm2.com/
-```md
+<br><br>
 // ToDo: Write iTerm2 sync procedure
-```
+
 
 ### Install zsh-autosuggestions plugin
 ```bash
@@ -66,9 +66,7 @@ Copy and replace(if existing) vlcrc file to
 ```C:\Users\%username%\Application Data\vlc\vlcrc```
 <br><br>
 using symbolic links won't work here because changing preferences in vlc media player removes existing vlcrc file and creates a new one, so after changing configuartion symbolic link will be deleted and a new vlcrc file will be created. 
-
-```md 
+<br><br>
 // ToDo: Find if there exist some option to force vlc media player to store and import vlcrc file from certain drectory (like iTerm2 does).
-```
 
 
