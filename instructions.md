@@ -1,5 +1,4 @@
 # Terminal
----
 ### Install homebrew
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -54,17 +53,22 @@ ln -s ~/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dotfiles/.p10k.zsh ~/.p10k.zsh 
 ```
 
--- VLC Media Player Configuration --
-copy and replace(if existing) vlcrc file to
-for linux/unix ~/.config/vlc/vlcrc
-For Mac /Users/badrobot/Library/Preferences/org.videolan.vlc/vlcrc
-for windows C:\Users\%username%\Application Data\vlc\vlcrc
+---
 
--- .gitconfig, .zshrc, .vimrc --
-1. Move all files in the list(.gitconfig, .zshrc, .vimrc) from home directory to an dotfiles-old directory for backup
-2. Make a symbolic link of this files in the dotfiles directory to home directory
+# VLC Media Player
+Copy and replace(if existing) vlcrc file to
+### Linux
+```~/.config/vlc/vlcrc```
 
--- powerline --
-make a link of the powerline folder in ~/.config folder
+### Mac
+```~/Library/Preferences/org.videolan.vlc/vlcrc```
+### Windows
+```C:\Users\%username%\Application Data\vlc\vlcrc```
+<br><br>
+using symbolic links won't work here because changing preferences in vlc media player removes existing vlcrc file and creates a new one, so after changing configuartion symbolic link will be deleted and a new vlcrc file will be created. 
+
+```md 
+// ToDo: Find if there exist some option to force vlc media player to store and import vlcrc file from certain drectory (like iTerm2 does).
+```
 
 
