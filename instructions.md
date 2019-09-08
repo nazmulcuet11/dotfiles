@@ -30,7 +30,12 @@ Set ```ZSH_THEME=powerlevel10k/powerlevel10k``` in your ```~/.zshrc```.
 ### Install iTerm2(Optional)
 Download iTerm2 from https://www.iterm2.com/
 <br><br>
-// ToDo: Write iTerm2 sync procedure
+Naviaget to ```iTerm2->Preference->General->Preference->Load preference from a custom folder or URL```
+and set it to ```Users/your_user_name/dotfiles```<br>
+Quit iTerm2 and open again.<br>
+Agai naviagate to ```iTerm2->Preference->General->Preference```<br>
+Check Save changes to folder when iTerm2 quits. <br><br>
+Set iTerm2 font to MesloLGS NF.
 
 
 ### Install zsh-autosuggestions plugin
