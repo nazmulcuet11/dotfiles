@@ -67,6 +67,10 @@ Copy and replace(if existing) vlcrc file to
 <br><br>
 using symbolic links won't work here because changing preferences in vlc media player removes existing vlcrc file and creates a new one, so after changing configuartion symbolic link will be deleted and a new vlcrc file will be created. 
 <br><br>
-// ToDo: Find if there exist some option to force vlc media player to store and import vlcrc file from certain drectory (like iTerm2 does).
+## VLC Media Player Option Two
+Symbolic link entire `org.videolan.vlc` folder through dotfiles. Doesn't fully know the pros and cons yet.
+```bash
+ln -s ~/dotfiles/org.videolan.vlc ~/Library/Preferences/org.videolan.vlc 
+```
 
 
