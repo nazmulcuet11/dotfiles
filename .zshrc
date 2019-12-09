@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+bindkey -v
+
 # Always run command after cd, this is zsh's way chpwd function is called whenever directory is changed
 function chpwd() {
   ls -a
