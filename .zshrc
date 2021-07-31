@@ -6,10 +6,10 @@ export ZSH=$HOME/.oh-my-zsh
 export PATH="/usr/local/sbin:$PATH"
 
 # Go settings
-export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+# export GOPATH=$HOME/go
+# export GOROOT=/usr/local/opt/go/libexec
+# export PATH=$PATH:$GOPATH/bin
+# export PATH=$PATH:$GOROOT/bin
 
 # Flutter
 export PATH="$PATH:$HOME/flutter/bin"
