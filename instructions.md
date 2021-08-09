@@ -78,4 +78,13 @@ Symbolic link entire `org.videolan.vlc` folder through dotfiles. Doesn't fully k
 ln -s ~/dotfiles/org.videolan.vlc ~/Library/Preferences/org.videolan.vlc 
 ```
 
+---
+
+# Torrent
+### Codesign qBitTorrent app
+```bash
+sudo codesign --force --deep --sign - /Applications/qbittorrent.app
+codesign -dvvvv /Applications/qbittorrent.app
+codesign --verify -vv  /Applications/qbittorrent.app
+```
 
